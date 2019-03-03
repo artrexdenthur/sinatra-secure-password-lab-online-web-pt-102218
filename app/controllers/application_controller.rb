@@ -39,7 +39,7 @@ class ApplicationController < Sinatra::Base
   end
 
   post "/login" do
-    binding.pry
+    # binding.pry
     unless params[:username] == "" || params[:password] == ""
       # authenticate
     else
