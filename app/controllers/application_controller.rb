@@ -21,7 +21,7 @@ class ApplicationController < Sinatra::Base
     if user.save
       erb :index
     else
-      erb :failure
+      redirect '/failure'
     end
 
   end
