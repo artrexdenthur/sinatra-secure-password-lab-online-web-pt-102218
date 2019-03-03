@@ -39,6 +39,7 @@ class ApplicationController < Sinatra::Base
   end
 
   post "/login" do
+    binding.pry
     if params[:username] && params[:password]
       # authenticate
     else
